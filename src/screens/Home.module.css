@@ -1,91 +1,126 @@
 .container {
   min-height: 100vh;
+  background: #0f1117;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3rem 1rem;
-  background-color: #121212;
-  color: #fff;
+  padding: 2.5rem 1.25rem 3rem;
 }
 
 .header {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
   text-align: center;
-  margin-bottom: 3rem;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
-  letter-spacing: 0.05em;
-  margin: 0 0 0.5rem;
+  margin: 0;
+  letter-spacing: 0.03em;
 }
 
-.subtitle {
-  font-size: 1rem;
-  color: #aaa;
-  margin: 0;
+/* ── Game grid ── */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 600px;
 }
 
-.gameList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.cardWrapper {
+  display: contents;
+}
+
+.card {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-  max-width: 480px;
-}
-
-.gameItem {
-  width: 100%;
-}
-
-.gameCard {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  padding: 1.25rem 1.5rem;
-  background-color: #1e1e1e;
-  border: 1px solid #333;
-  border-radius: 12px;
+  background: #1a1d24;
+  border: 1px solid #2a2d35;
+  border-radius: 16px;
+  overflow: hidden;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  transition: background-color 0.15s, border-color 0.15s;
+  transition: transform 0.18s ease, border-color 0.18s, box-shadow 0.18s;
 }
 
-.gameCard:hover {
-  background-color: #2a2a2a;
-  border-color: #555;
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #22c55e;
+  box-shadow: 0 8px 32px rgba(34, 197, 94, 0.15);
 }
 
-.gameCardDisabled {
+.cardDisabled {
+  cursor: default;
   opacity: 0.5;
-  cursor: not-allowed;
+}
+
+.cardDisabled:hover {
+  transform: none;
+  border-color: #2a2d35;
+  box-shadow: none;
+}
+
+/* ── Thumbnail ── */
+.cardThumb {
   position: relative;
+  aspect-ratio: 4 / 3;
+  background: #242830;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.gameCardDisabled:hover {
-  background-color: #1e1e1e;
-  border-color: #333;
+.comingSoonOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
 }
 
-.gameName {
-  font-size: 1.1rem;
+/* ── Card text ── */
+.cardInfo {
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.cardTitle {
+  font-size: 1rem;
   font-weight: 700;
 }
 
-.gameDesc {
-  font-size: 0.875rem;
-  color: #aaa;
+.cardDesc {
+  font-size: 0.8rem;
+  color: #888;
 }
 
-.comingSoon {
-  margin-top: 0.25rem;
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #666;
+/* ── Connections thumbnail ── */
+.thumbGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.thumbTile {
+  border-radius: 5px;
+  aspect-ratio: 1;
+  opacity: 0.9;
 }
