@@ -5,8 +5,8 @@
 body {
   margin: 0;
   font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  background-color: #121212;
-  color: #fff;
+  background-color: #edf6ed;
+  color: #1e3a1e;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -1,7 +1,7 @@
 .container {
   min-height: 100vh;
-  background: #0f1117;
-  color: #fff;
+  background: #edf6ed;
+  color: #1e3a1e;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,9 +26,9 @@
 .btnBack {
   padding: 0.45rem 0.9rem;
   background: transparent;
-  border: 2px solid #444;
+  border: 1.5px solid #b0d4b0;
   border-radius: 8px;
-  color: #22c55e;
+  color: #3d6b35;
   font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
@@ -38,17 +38,17 @@
 }
 
 .btnBack:hover {
-  border-color: #22c55e;
-  background: rgba(34, 197, 94, 0.08);
+  border-color: #3d6b35;
+  background: rgba(61, 107, 53, 0.07);
 }
 
 .btnHelp {
   width: 36px;
   height: 36px;
-  background: #2a2d35;
-  border: 2px solid #444;
+  background: #fff;
+  border: 1.5px solid #b0d4b0;
   border-radius: 50%;
-  color: #aaa;
+  color: #7aaa72;
   font-size: 1rem;
   font-weight: 700;
   cursor: pointer;
@@ -59,13 +59,14 @@
 }
 
 .btnHelp:hover {
-  border-color: #888;
-  color: #fff;
+  border-color: #3d6b35;
+  color: #3d6b35;
 }
 
 .title {
   font-size: 1.6rem;
   font-weight: 800;
+  color: #2d5a27;
   margin: 0 0 0.4rem;
 }
 
@@ -73,83 +74,11 @@
   font-size: 1.1rem;
   font-weight: 600;
   margin: 0;
+  color: #3a5a38;
 }
 
 .attemptsNum {
-  color: #22c55e;
-}
-
-/* ── Help modal ── */
-.modalOverlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  padding: 1rem;
-}
-
-.modal {
-  background: #1a1d24;
-  border: 1px solid #333;
-  border-radius: 16px;
-  padding: 1.75rem 1.5rem;
-  max-width: 420px;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.modal p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #ccc;
-  line-height: 1.5;
-}
-
-.modalTitle {
-  font-size: 1.3rem;
-  font-weight: 800;
-  margin: 0;
-}
-
-.modalExamples {
-  background: #242830;
-  border-radius: 10px;
-  padding: 0.75rem 1rem;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.modalWarning {
-  font-style: italic;
-  color: #888 !important;
-  font-size: 0.82rem !important;
-}
-
-.btnClose {
-  margin-top: 0.25rem;
-  padding: 0.7rem 2rem;
-  background: transparent;
-  border: 2px solid #555;
-  border-radius: 10px;
-  color: #aaa;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: border-color 0.15s, color 0.15s;
-  align-self: center;
-}
-
-.btnClose:hover {
-  border-color: #22c55e;
-  color: #22c55e;
+  color: #3d6b35;
 }
 
 /* ── Solved banners ── */
@@ -174,12 +103,13 @@
   font-weight: 800;
   font-size: 1rem;
   letter-spacing: 0.04em;
+  color: #fff;
 }
 
 .solvedWords {
   display: block;
   font-size: 0.8rem;
-  opacity: 0.9;
+  color: rgba(255,255,255,0.9);
   margin-top: 0.2rem;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -202,10 +132,10 @@
 
 .tile {
   aspect-ratio: 1;
-  background: #242830;
-  border: 2px solid transparent;
+  background: #fff;
+  border: 1.5px solid #c5dfc5;
   border-radius: 10px;
-  color: #fff;
+  color: #1e3a1e;
   font-size: 1.5rem;
   font-weight: 800;
   cursor: pointer;
@@ -216,10 +146,12 @@
   text-transform: uppercase;
   letter-spacing: 0.04em;
   user-select: none;
+  box-shadow: 0 1px 4px rgba(45, 90, 39, 0.08);
 }
 
 .tile:hover:not(:disabled) {
-  background: #2e3340;
+  background: #f0f9f0;
+  border-color: #8aba87;
 }
 
 .tile:active:not(:disabled) {
@@ -227,9 +159,10 @@
 }
 
 .tileSelected {
-  background: #14291f;
-  border-color: #22c55e;
-  color: #22c55e;
+  background: #3d6b35;
+  border-color: #3d6b35;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(61, 107, 53, 0.3);
 }
 
 @keyframes shake {
@@ -243,12 +176,13 @@
 
 .tileShake {
   animation: shake 0.5s ease-in-out;
-  border-color: #ef4444;
-  color: #ef4444;
+  border-color: #e53935;
+  color: #e53935;
+  background: #fff5f5;
 }
 
 .tileHinted {
-  opacity: 0.85;
+  opacity: 0.88;
 }
 
 /* ── Action buttons ── */
@@ -266,7 +200,7 @@
   font-size: 0.9rem;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.15s, opacity 0.15s, color 0.15s;
+  transition: background 0.15s, opacity 0.15s, border-color 0.15s;
   white-space: nowrap;
 }
 
@@ -276,36 +210,113 @@
 }
 
 .btnHint {
-  background: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  background: #fff;
+  border: 1.5px solid #1e3a1e;
+  color: #1e3a1e;
 }
 
 .btnHint:not(:disabled):hover {
-  background: rgba(255,255,255,0.08);
+  background: #f0f9f0;
 }
 
 .btnClear {
-  background: transparent;
-  border: 2px solid #555;
-  color: #999;
+  background: #fff;
+  border: 1.5px solid #b0d4b0;
+  color: #7aaa72;
 }
 
 .btnClear:not(:disabled):hover {
-  background: rgba(255,255,255,0.05);
-  border-color: #888;
-  color: #ccc;
+  background: #f0f9f0;
+  border-color: #7aaa72;
+  color: #3d6b35;
 }
 
 .btnCheck {
-  background: transparent;
-  border: 2px solid #22c55e;
-  color: #22c55e;
+  background: #fff;
+  border: 1.5px solid #3d6b35;
+  color: #3d6b35;
 }
 
 .btnCheck:not(:disabled):hover {
-  background: #22c55e;
-  color: #000;
+  background: #3d6b35;
+  color: #fff;
+}
+
+/* ── Help modal ── */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(30, 58, 30, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.modal {
+  background: #fff;
+  border: 1.5px solid #c5dfc5;
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 8px 32px rgba(45, 90, 39, 0.15);
+}
+
+.modal p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4a6a4a;
+  line-height: 1.5;
+}
+
+.modalTitle {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0;
+  color: #2d5a27;
+}
+
+.modalExamples {
+  background: #f0f9f0;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border: 1px solid #c5dfc5;
+}
+
+.modalWarning {
+  font-style: italic;
+  color: #9ab89a !important;
+  font-size: 0.82rem !important;
+}
+
+.btnClose {
+  margin-top: 0.25rem;
+  padding: 0.7rem 2rem;
+  background: transparent;
+  border: 1.5px solid #b0d4b0;
+  border-radius: 10px;
+  color: #7aaa72;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+  align-self: center;
+}
+
+.btnClose:hover {
+  border-color: #3d6b35;
+  color: #3d6b35;
+  background: #f0f9f0;
 }
 
 /* ── Victory screen ── */
@@ -324,37 +335,7 @@
   font-weight: 800;
   margin: 0;
   text-align: center;
-}
-
-.victoryAttempts {
-  font-size: 1.2rem;
-  margin: 0;
-  color: #22c55e;
-}
-
-.victoryCompare {
-  font-size: 0.9rem;
-  color: #aaa;
-  text-align: center;
-  margin: 0;
-  max-width: 340px;
-}
-
-.btnShare {
-  width: 100%;
-  padding: 0.9rem;
-  background: #1e2128;
-  border: 1px solid #333;
-  border-radius: 12px;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-
-.btnShare:hover {
-  background: #272c38;
+  color: #2d5a27;
 }
 
 .victoryGroups {
@@ -373,22 +354,22 @@
 .btnSecondary {
   flex: 1;
   padding: 0.75rem;
-  background: transparent;
-  border: 2px solid #333;
+  background: #fff;
+  border: 1.5px solid #b0d4b0;
   border-radius: 10px;
-  color: #aaa;
+  color: #3d6b35;
   font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  transition: border-color 0.15s, color 0.15s;
+  transition: border-color 0.15s, background 0.15s;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .btnSecondary:hover {
-  border-color: #22c55e;
-  color: #22c55e;
+  border-color: #3d6b35;
+  background: #f0f9f0;
 }

@@ -1,0 +1,304 @@
+{
+  "_info": "Yhteydet-pelin ryhmäehdotukset. Jokainen ryhmä sisältää 4 sanaa jotka yhdistyvät samaan liitososaan. 'words' = näytettävät sanat (ISOLLA), 'connector' = liitososa, 'compounds' = yhdyssanat validointia varten.",
+  "_huom": "Sanat voivat esiintyä eri puzzleissa, mutta eivät koskaan kahdessa ryhmässä saman puzzlen sisällä.",
+
+  "groups": [
+    {
+      "id": "g001",
+      "connector": "-lamppu",
+      "words": ["TASKU", "OTSA", "JALKA", "KATTO"],
+      "compounds": ["taskulamppu", "otsalamppu", "jalkalamppu", "kattolamppu"]
+    },
+    {
+      "id": "g002",
+      "connector": "-kaappi",
+      "words": ["JÄÄ", "ASTIA", "KENKÄ", "AVAIN"],
+      "compounds": ["jääkaappi", "astiakaappi", "kenkäkaappi", "avainkaappi"]
+    },
+    {
+      "id": "g003",
+      "connector": "-karva",
+      "words": ["RINTA", "SÄÄRI", "KULMA", "VIIKSI"],
+      "compounds": ["rintakarva", "säärikarva", "kulmakarva", "viiksikarva"]
+    },
+    {
+      "id": "g004",
+      "connector": "-taulu",
+      "words": ["LIITU", "NAAMA", "TIKKA", "VALO"],
+      "compounds": ["liitutaulu", "naamataulu", "tikkatautu", "valotaulu"]
+    },
+    {
+      "id": "g005",
+      "connector": "-huone",
+      "words": ["MAKUU", "KYLPY", "RUOKA", "OLO"],
+      "compounds": ["makuuhuone", "kylpyhuone", "ruokahuone", "olohuone"]
+    },
+    {
+      "id": "g006",
+      "connector": "-pallo",
+      "words": ["JALKA", "KORI", "LENTO", "SULKA"],
+      "compounds": ["jalkapallo", "koripallo", "lentopallo", "sulkapallo"]
+    },
+    {
+      "id": "g007",
+      "connector": "-talo",
+      "words": ["KERROS", "RIVI", "PARI", "OMAKOTI"],
+      "compounds": ["kerrostalo", "rivitalo", "paritalo", "omakotitalo"]
+    },
+    {
+      "id": "g008",
+      "connector": "-kauppa",
+      "words": ["KUKKA", "KIRJA", "VAATE", "LEVY"],
+      "compounds": ["kukkakauppa", "kirjakauppa", "vaatekauppa", "levykauppa"]
+    },
+    {
+      "id": "g009",
+      "connector": "-kello",
+      "words": ["RANNE", "HERÄTYS", "SEINÄ", "PÖYTÄ"],
+      "compounds": ["rannekello", "herätyskello", "seinäkello", "pöytäkello"]
+    },
+    {
+      "id": "g010",
+      "connector": "-ranta",
+      "words": ["MERI", "JÄRVI", "JOKI", "UIMA"],
+      "compounds": ["meriranta", "järviranta", "jokiranta", "uimaranta"]
+    },
+    {
+      "id": "g011",
+      "connector": "-reikä",
+      "words": ["AVAIN", "NENÄ", "KORVA", "NAPA"],
+      "compounds": ["avainreikä", "nenäreikä", "korvareikä", "napareikä"]
+    },
+    {
+      "id": "g012",
+      "connector": "-lippu",
+      "words": ["BUSSI", "JUNA", "LENTO", "LAIVA"],
+      "compounds": ["bussilippu", "junalippu", "lentolippu", "laivalippu"]
+    },
+    {
+      "id": "g013",
+      "connector": "-kori",
+      "words": ["PYYKKI", "POSTI", "PAPERI", "HEDELMÄ"],
+      "compounds": ["pyykkikori", "postikori", "paperikori", "hedelmäkori"]
+    },
+    {
+      "id": "g014",
+      "connector": "-pöytä",
+      "words": ["KIRJOITUS", "KAHVI", "SOHVA", "PELI"],
+      "compounds": ["kirjoituspöytä", "kahvipöytä", "sohvapöytä", "pelipöytä"]
+    },
+    {
+      "id": "g015",
+      "connector": "-asema",
+      "words": ["POLIISI", "HUOLTO", "PALO", "METRO"],
+      "compounds": ["poliisiasema", "huoltoasema", "paloasema", "metroasema"]
+    },
+    {
+      "id": "g016",
+      "connector": "-auto",
+      "words": ["PAKETTI", "POSTI", "ROSKA", "HENKILÖ"],
+      "compounds": ["pakettiauto", "postiauto", "roskaauto", "henkilöauto"]
+    },
+    {
+      "id": "g017",
+      "connector": "-koulu",
+      "words": ["ALA", "YLÄ", "AMMATTI", "PERUS"],
+      "compounds": ["alakoulu", "yläkoulu", "ammattikoulu", "peruskoulu"]
+    },
+    {
+      "id": "g018",
+      "connector": "-maa",
+      "words": ["KOTI", "MANNER", "EMO", "ULKO"],
+      "compounds": ["kotimaa", "mannermaa", "emomaa", "ulkomaa"]
+    },
+    {
+      "id": "g019",
+      "connector": "-puu",
+      "words": ["OMENA", "LUUMU", "KIRSIKKA", "PÄÄRYNÄ"],
+      "compounds": ["omenapuu", "luumupuu", "kirsikkapuu", "päärynäpuu"]
+    },
+    {
+      "id": "g020",
+      "connector": "-kirja",
+      "words": ["OPPI", "KUVA", "VIERAS", "TILI"],
+      "compounds": ["oppikirja", "kuvakirja", "vieraskirja", "tilikirja"]
+    },
+    {
+      "id": "g021",
+      "connector": "-lista",
+      "words": ["OSTO", "TOIVO", "RUOKA", "KAUPPA"],
+      "compounds": ["ostolista", "toivolista", "ruokalista", "kauppalista"]
+    },
+    {
+      "id": "g022",
+      "connector": "-kenttä",
+      "words": ["LENTO", "JÄÄ", "TENNIS", "URHEILU"],
+      "compounds": ["lentokenttä", "jääkenttä", "tenniskenttä", "urheilukenttä"]
+    },
+    {
+      "id": "g023",
+      "connector": "-liike",
+      "words": ["URHEILU", "AUTO", "LEVY", "KUKKA"],
+      "compounds": ["urheiluliike", "autoliike", "levyliike", "kukkakauppa"]
+    },
+    {
+      "id": "g024",
+      "connector": "-mies",
+      "words": ["PALO", "LIIKE", "SOTA", "SÄHKÖ"],
+      "compounds": ["palomies", "liikemies", "sotamies", "sähkömies"]
+    },
+    {
+      "id": "g025",
+      "connector": "-päivä",
+      "words": ["SYNTYMÄ", "JOULU", "NIMI", "LOMA"],
+      "compounds": ["syntymäpäivä", "joulupäivä", "nimipäivä", "lomapäivä"]
+    },
+    {
+      "id": "g026",
+      "connector": "-kausi",
+      "words": ["KESÄ", "TALVI", "KEVÄT", "SYKSY"],
+      "compounds": ["kesäkausi", "talvikausi", "kevätkausi", "syyskausi"]
+    },
+    {
+      "id": "g027",
+      "connector": "-loma",
+      "words": ["KESÄ", "JOULU", "SYKSY", "KEVÄT"],
+      "compounds": ["kesäloma", "joululoma", "syysloma", "kevätloma"],
+      "_huom": "Ei samaan puzzleen g026:n kanssa (samat sanat)"
+    },
+    {
+      "id": "g028",
+      "connector": "-paikka",
+      "words": ["LEPO", "TYÖ", "SYNTYMÄ", "ASUIN"],
+      "compounds": ["lepopaikka", "työpaikka", "syntymäpaikka", "asuinpaikka"]
+    },
+    {
+      "id": "g029",
+      "connector": "-putki",
+      "words": ["VESI", "LÄMPÖ", "SAVU", "ILMA"],
+      "compounds": ["vesiputki", "lämpöputki", "savuputki", "ilmaputki"]
+    },
+    {
+      "id": "g030",
+      "connector": "-lasi",
+      "words": ["SILMÄ", "MAALI", "IKKUNA", "AURINKO"],
+      "compounds": ["silmälasi", "maalilasi", "ikkunalasi", "aurinkolasi"]
+    },
+    {
+      "id": "g031",
+      "connector": "-kuppi",
+      "words": ["KAHVI", "TEE", "OLUT", "SILMÄ"],
+      "compounds": ["kahvikuppi", "teekuppi", "olutkuppi", "silmäkuppi"]
+    },
+    {
+      "id": "g032",
+      "connector": "-lusikka",
+      "words": ["KAHVI", "TEE", "KEITTO", "RUOKA"],
+      "compounds": ["kahvilusikka", "teelusikka", "keittolusikka", "ruokalusikka"]
+    },
+    {
+      "id": "g033",
+      "connector": "-matka",
+      "words": ["KOULU", "JUNA", "MERI", "LENTO"],
+      "compounds": ["koulumatka", "junamatka", "merimatka", "lentomatka"]
+    },
+    {
+      "id": "g034",
+      "connector": "-piha",
+      "words": ["KOULU", "KOTI", "SISÄ", "TAKA"],
+      "compounds": ["koulupiha", "kotipiha", "sisäpiha", "takapiha"]
+    },
+    {
+      "id": "g035",
+      "connector": "-penkki",
+      "words": ["TYÖ", "KOULU", "KIRKKO", "PUISTO"],
+      "compounds": ["työpenkki", "koulupenkki", "kirkkopenkki", "puistopenkki"]
+    },
+    {
+      "id": "g036",
+      "connector": "-lauta",
+      "words": ["LEIKKUU", "SURFI", "LUMI", "SKEITTI"],
+      "compounds": ["leikkuulauta", "surfilauta", "lumilauta", "skeittilauuta"]
+    },
+    {
+      "id": "g037",
+      "connector": "-peli",
+      "words": ["LAUTA", "KORTTI", "VIDEO", "TIETOKONE"],
+      "compounds": ["lautapeli", "korttipeli", "videopeli", "tietokonepeli"]
+    },
+    {
+      "id": "g038",
+      "connector": "-vene",
+      "words": ["SOUTU", "MOOTTORI", "PURJE", "PELASTUS"],
+      "compounds": ["soutuvene", "moottorivene", "purjevene", "pelastusvene"]
+    },
+    {
+      "id": "g039",
+      "connector": "-ovi",
+      "words": ["SISÄ", "ULKO", "ETU", "PALO"],
+      "compounds": ["sisäovi", "ulko-ovi", "etuovi", "palo-ovi"]
+    },
+    {
+      "id": "g040",
+      "connector": "-tunti",
+      "words": ["LIIKUNTA", "MUSIIKKI", "SUOMI", "TAIDE"],
+      "compounds": ["liikuntatunti", "musiikkitunti", "suomitunti", "taidetunti"]
+    },
+    {
+      "id": "g041",
+      "connector": "-varoitin",
+      "words": ["PALO", "HÄKÄ", "KAASU", "MELU"],
+      "compounds": ["palovaroitin", "häkävaroitin", "kaasuvaroitin", "meluvaroitin"]
+    },
+    {
+      "id": "g042",
+      "connector": "-purku",
+      "words": ["RAKENNUS", "AUTO", "POMMI", "JÄNNITYS"],
+      "compounds": ["rakennuspurku", "autopurku", "pommipurku", "jännityspurku"],
+      "_huom": "Voi olla liian vaikea — tarkista"
+    }
+  ],
+
+  "suggestedPuzzles": [
+    {
+      "id": "puzzle-001",
+      "title": "Klassikko (IS.fi-esimerkki)",
+      "groups": ["g001", "g002", "g003", "g004"]
+    },
+    {
+      "id": "puzzle-002",
+      "title": "Koti ja urheilu",
+      "groups": ["g005", "g006", "g007", "g010"]
+    },
+    {
+      "id": "puzzle-003",
+      "title": "Kaupat ja kellot",
+      "groups": ["g008", "g009", "g011", "g019"]
+    },
+    {
+      "id": "puzzle-004",
+      "title": "Liikenne ja paikat",
+      "groups": ["g012", "g013", "g015", "g018"]
+    },
+    {
+      "id": "puzzle-005",
+      "title": "Koulut ja kentät",
+      "groups": ["g016", "g017", "g022", "g025"]
+    },
+    {
+      "id": "puzzle-006",
+      "title": "Kirjat ja listat",
+      "groups": ["g020", "g021", "g028", "g034"]
+    },
+    {
+      "id": "puzzle-007",
+      "title": "Putket ja lasit",
+      "groups": ["g029", "g030", "g037", "g038"]
+    },
+    {
+      "id": "puzzle-008",
+      "title": "Vuodenajat ja loma",
+      "groups": ["g026", "g024", "g035", "g039"]
+    }
+  ]
+}
