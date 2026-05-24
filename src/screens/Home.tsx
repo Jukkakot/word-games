@@ -15,7 +15,7 @@ const games: GameEntry[] = [
     title: 'Yhteydet',
     description: 'Löydä neljän ryhmää — mitkä sanat kuuluvat yhteen?',
     path: '/connections',
-    available: false,
+    available: true,
   },
 ]
 
