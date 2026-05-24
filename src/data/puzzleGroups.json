@@ -30,8 +30,8 @@
     {
       "id": "g005",
       "connector": "-huone",
-      "words": ["MAKUU", "KYLPY", "RUOKA", "OLO"],
-      "compounds": ["makuuhuone", "kylpyhuone", "ruokahuone", "olohuone"]
+      "words": ["TYÖ", "KYLPY", "KASVI", "OLO"],
+      "compounds": ["työhuone", "kylpyhuone", "kasvihuone", "olohuone"]
     },
     {
       "id": "g006",
@@ -58,12 +58,6 @@
       "compounds": ["rannekello", "herätyskello", "seinäkello", "pöytäkello"]
     },
     {
-      "id": "g011",
-      "connector": "-reikä",
-      "words": ["AVAIN", "NENÄ", "KORVA", "NAPA"],
-      "compounds": ["avainreikä", "nenäreikä", "korvareikä", "napareikä"]
-    },
-    {
       "id": "g012",
       "connector": "-lippu",
       "words": ["BUSSI", "JUNA", "LENTO", "LAIVA"],
@@ -72,8 +66,8 @@
     {
       "id": "g013",
       "connector": "-kori",
-      "words": ["PYYKKI", "POSTI", "PAPERI", "HEDELMÄ"],
-      "compounds": ["pyykkikori", "postikori", "paperikori", "hedelmäkori"]
+      "words": ["PYYKKI", "OSTOS", "PAPERI", "HEDELMÄ"],
+      "compounds": ["pyykkikori", "ostoskori", "paperikori", "hedelmäkori"]
     },
     {
       "id": "g014",
@@ -100,12 +94,6 @@
       "compounds": ["alakoulu", "yläkoulu", "ammattikoulu", "peruskoulu"]
     },
     {
-      "id": "g018",
-      "connector": "-maa",
-      "words": ["KOTI", "SYNTYMÄ", "POHJOIS", "ULKO"],
-      "compounds": ["kotimaa", "syntymämaa", "pohjoismaa", "ulkomaa"]
-    },
-    {
       "id": "g019",
       "connector": "-puu",
       "words": ["OMENA", "LUUMU", "KIRSIKKA", "PÄÄRYNÄ"],
@@ -120,8 +108,8 @@
     {
       "id": "g021",
       "connector": "-lista",
-      "words": ["OSTO", "TOIVO", "RUOKA", "KAUPPA"],
-      "compounds": ["ostolista", "toivolista", "ruokalista", "kauppalista"]
+      "words": ["OSTOS", "TOIVE", "RUOKA", "KAUPPA"],
+      "compounds": ["ostoslista", "toivelista", "ruokalista", "kauppalista"]
     },
     {
       "id": "g022",
@@ -143,9 +131,9 @@
     },
     {
       "id": "g026",
-      "connector": "-kausi",
-      "words": ["KESÄ", "TALVI", "KEVÄT", "LOMA"],
-      "compounds": ["kesäkausi", "talvikausi", "kevätkausi", "lomakausi"]
+      "connector": "-loma",
+      "words": ["KESÄ", "TALVI", "SYYS", "HIIHTO"],
+      "compounds": ["kesäloma", "talviloma", "syysloma", "hiihtoloma"]
     },
     {
       "id": "g027",
@@ -158,12 +146,6 @@
       "connector": "-paikka",
       "words": ["LEPO", "TYÖ", "SYNTYMÄ", "ASUIN"],
       "compounds": ["lepopaikka", "työpaikka", "syntymäpaikka", "asuinpaikka"]
-    },
-    {
-      "id": "g029",
-      "connector": "-putki",
-      "words": ["VESI", "LÄMPÖ", "SAVU", "ILMA"],
-      "compounds": ["vesiputki", "lämpöputki", "savuputki", "ilmaputki"]
     },
     {
       "id": "g030",
@@ -198,8 +180,8 @@
     {
       "id": "g036",
       "connector": "-lauta",
-      "words": ["LEIKKUU", "SURFI", "LUMI", "SKEITTI"],
-      "compounds": ["leikkuulauta", "surfilauta", "lumilauta", "skeittilauta"]
+      "words": ["LEIKKUU", "SURFFI", "LUMI", "SKEITTI"],
+      "compounds": ["leikkuulauta", "surffilauta", "lumilauta", "skeittilauta"]
     },
     {
       "id": "g037",
@@ -343,12 +325,12 @@
     },
     {
       "id": "th023",
-      "connector": "SUOMALAISIA METSÄELÄIMIÄ",
+      "connector": "SUOMALAISIA METSÄNELÄIMIÄ",
       "words": ["SIILI", "KETTU", "JÄNIS", "ORAVA"]
     },
     {
       "id": "th024",
-      "connector": "SUOMALAISIA RALLY-KULJETTAJIA",
+      "connector": "SUOMALAISIA RALLI-KULJETTAJIA",
       "words": ["MÄKINEN", "GRÖNHOLM", "LATVALA", "ROVANPERÄ"]
     },
     {
@@ -379,17 +361,12 @@
     {
       "id": "th030",
       "connector": "SUOMALAISUUDEN KÄSITTEITÄ",
-      "words": ["SISU", "TALKOOT", "KAAMOS", "JOIKU"]
+      "words": ["SISU", "SAUNA", "RUISLEIPÄ", "HAUKI"]
     },
     {
       "id": "th031",
       "connector": "ITALIALAISIA RUOKALAJEJA",
       "words": ["PIZZA", "PASTA", "RISOTTO", "TIRAMISU"]
-    },
-    {
-      "id": "th032",
-      "connector": "LEGENDAARISIA SUOMALAISIA JUOKSIJOITA",
-      "words": ["NURMI", "KOLEHMAINEN", "RITOLA", "SALMINEN"]
     },
     {
       "id": "th033",
