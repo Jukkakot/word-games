@@ -102,8 +102,8 @@
     {
       "id": "g018",
       "connector": "-maa",
-      "words": ["KOTI", "MANNER", "EMO", "ULKO"],
-      "compounds": ["kotimaa", "mannermaa", "emomaa", "ulkomaa"]
+      "words": ["KOTI", "SYNTYMÄ", "POHJOIS", "ULKO"],
+      "compounds": ["kotimaa", "syntymämaa", "pohjoismaa", "ulkomaa"]
     },
     {
       "id": "g019",
@@ -130,12 +130,6 @@
       "compounds": ["lentokenttä", "jääkenttä", "tenniskenttä", "urheilukenttä"]
     },
     {
-      "id": "g023",
-      "connector": "-liike",
-      "words": ["URHEILU", "AUTO", "LEVY", "KUKKA"],
-      "compounds": ["urheiluliike", "autoliike", "levyliike", "kukkaliike"]
-    },
-    {
       "id": "g024",
       "connector": "-mies",
       "words": ["PALO", "LIIKE", "SOTA", "SÄHKÖ"],
@@ -150,15 +144,14 @@
     {
       "id": "g026",
       "connector": "-kausi",
-      "words": ["KESÄ", "TALVI", "KEVÄT", "SYKSY"],
-      "compounds": ["kesäkausi", "talvikausi", "kevätkausi", "syyskausi"]
+      "words": ["KESÄ", "TALVI", "KEVÄT", "LOMA"],
+      "compounds": ["kesäkausi", "talvikausi", "kevätkausi", "lomakausi"]
     },
     {
       "id": "g027",
       "connector": "-loma",
-      "words": ["KESÄ", "JOULU", "SYKSY", "KEVÄT"],
-      "compounds": ["kesäloma", "joululoma", "syysloma", "kevätloma"],
-      "_huom": "Ei samaan puzzleen g026:n kanssa (samat sanat)"
+      "words": ["KESÄ", "JOULU", "HIIHTO", "KEVÄT"],
+      "compounds": ["kesäloma", "joululoma", "hiihtoloma", "kevätloma"]
     },
     {
       "id": "g028",
@@ -175,14 +168,8 @@
     {
       "id": "g030",
       "connector": "-lasi",
-      "words": ["SILMÄ", "MAALI", "IKKUNA", "AURINKO"],
-      "compounds": ["silmälasi", "maalilasi", "ikkunalasi", "aurinkolasi"]
-    },
-    {
-      "id": "g031",
-      "connector": "-kuppi",
-      "words": ["KAHVI", "TEE", "OLUT", "SILMÄ"],
-      "compounds": ["kahvikuppi", "teekuppi", "olutkuppi", "silmäkuppi"]
+      "words": ["SILMÄ", "TUULI", "IKKUNA", "AURINKO"],
+      "compounds": ["silmälasi", "tuulilasi", "ikkunalasi", "aurinkolasi"]
     },
     {
       "id": "g032",
@@ -235,8 +222,8 @@
     {
       "id": "g040",
       "connector": "-tunti",
-      "words": ["LIIKUNTA", "MUSIIKKI", "SUOMI", "TAIDE"],
-      "compounds": ["liikuntatunti", "musiikkitunti", "suomitunti", "taidetunti"]
+      "words": ["LIIKUNTA", "MUSIIKKI", "KUVATAIDE", "KÄSITYÖ"],
+      "compounds": ["liikuntatunti", "musiikkitunti", "kuvataidetunti", "käsityötunti"]
     },
     {
       "id": "g041",
