@@ -230,6 +230,176 @@
       "connector": "-varoitin",
       "words": ["PALO", "HÄKÄ", "KAASU", "MELU"],
       "compounds": ["palovaroitin", "häkävaroitin", "kaasuvaroitin", "meluvaroitin"]
+    },
+    {
+      "id": "th001",
+      "connector": "KANSANTANSSEJA",
+      "words": ["POLSKA", "POLKKA", "SOTTIISI", "MASURKKA"]
+    },
+    {
+      "id": "th002",
+      "connector": "MARJOJA",
+      "words": ["MUSTIKKA", "PUOLUKKA", "VADELMA", "MANSIKKA"]
+    },
+    {
+      "id": "th003",
+      "connector": "SUOMEN SUURIMPIA JÄRVIÄ",
+      "words": ["SAIMAA", "PÄIJÄNNE", "PIELINEN", "INARI"]
+    },
+    {
+      "id": "th004",
+      "connector": "HAVUPUITA",
+      "words": ["MÄNTY", "KUUSI", "LEHTIKUUSI", "KATAJA"]
+    },
+    {
+      "id": "th005",
+      "connector": "SUOMALAISIA PETOELÄIMIÄ",
+      "words": ["KARHU", "SUSI", "ILVES", "AHMA"]
+    },
+    {
+      "id": "th006",
+      "connector": "SUOMALAISIA PERINNERUOKIA",
+      "words": ["KARJALANPIIRAKKA", "LOHIKEITTO", "HERNEKEITTO", "MUSTAMAKKARA"]
+    },
+    {
+      "id": "th007",
+      "connector": "KAHVILAN LEIVONNAISIA",
+      "words": ["KORVAPUUSTI", "MUNKKI", "PULLA", "VIINERI"]
+    },
+    {
+      "id": "th008",
+      "connector": "TALVIOLYMPIALAJEJA",
+      "words": ["HIIHTO", "MÄKIHYPPY", "CURLING", "LUISTELU"]
+    },
+    {
+      "id": "th009",
+      "connector": "SUOMALAISIA F1-KULJETTAJIA",
+      "words": ["HÄKKINEN", "RÄIKKÖNEN", "BOTTAS", "KOVALAINEN"]
+    },
+    {
+      "id": "th010",
+      "connector": "MUUMIHAHMOJA",
+      "words": ["MUUMIPAPPA", "NUUSKAMUIKKUNEN", "NIISKUNEITI", "HEMULI"]
+    },
+    {
+      "id": "th011",
+      "connector": "SUOMALAISIA KIRJAILIJOITA",
+      "words": ["KIVI", "WALTARI", "LINNA", "SILLANPÄÄ"]
+    },
+    {
+      "id": "th012",
+      "connector": "SUOMALAISIA ROCKBÄNDEJÄ",
+      "words": ["HIM", "NIGHTWISH", "APOCALYPTICA", "LORDI"]
+    },
+    {
+      "id": "th013",
+      "connector": "SUOMEN MAAKUNTIA",
+      "words": ["LAPPI", "UUSIMAA", "PIRKANMAA", "SATAKUNTA"]
+    },
+    {
+      "id": "th014",
+      "connector": "POHJOISMAIDEN PÄÄKAUPUNKEJA",
+      "words": ["TUKHOLMA", "OSLO", "KÖÖPENHAMINA", "REYKJAVIK"]
+    },
+    {
+      "id": "th015",
+      "connector": "SUOMEN NAAPURIMAITA",
+      "words": ["RUOTSI", "NORJA", "VENÄJÄ", "VIRO"]
+    },
+    {
+      "id": "th016",
+      "connector": "JOUSISOITTIMIA",
+      "words": ["VIULU", "SELLO", "ALTTOVIULU", "KONTRABASSO"]
+    },
+    {
+      "id": "th017",
+      "connector": "PUUPUHALLINSOITTIMIA",
+      "words": ["HUILU", "OBOE", "KLARINETTI", "FAGOTTI"]
+    },
+    {
+      "id": "th018",
+      "connector": "KORTTIPELEJÄ",
+      "words": ["PASIANSI", "POKERI", "BRIDGE", "CANASTA"]
+    },
+    {
+      "id": "th019",
+      "connector": "SAUNAAN KUULUVIA",
+      "words": ["LÖYLY", "KIUAS", "VIHTA", "LAUTEET"]
+    },
+    {
+      "id": "th020",
+      "connector": "ULOMPIA PLANEETTOJA",
+      "words": ["JUPITER", "SATURNUS", "URANUS", "NEPTUNUS"]
+    },
+    {
+      "id": "th021",
+      "connector": "SUOMEN YLEISIÄ LINTUJA",
+      "words": ["TALITIAINEN", "PEIPPO", "VARPUNEN", "HARAKKA"]
+    },
+    {
+      "id": "th022",
+      "connector": "SUOMALAISIA JUHLAPERINTEITÄ",
+      "words": ["JUHANNUS", "JOULU", "PÄÄSIÄINEN", "VAPPU"]
+    },
+    {
+      "id": "th023",
+      "connector": "SUOMALAISIA METSÄELÄIMIÄ",
+      "words": ["SIILI", "KETTU", "JÄNIS", "ORAVA"]
+    },
+    {
+      "id": "th024",
+      "connector": "SUOMALAISIA RALLY-KULJETTAJIA",
+      "words": ["MÄKINEN", "GRÖNHOLM", "LATVALA", "ROVANPERÄ"]
+    },
+    {
+      "id": "th025",
+      "connector": "VESIALUEIDEN TYYPPEJÄ",
+      "words": ["JOKI", "MERI", "LAMPI", "PURO"]
+    },
+    {
+      "id": "th026",
+      "connector": "SUOMALAISIA PUOLUEITA",
+      "words": ["KOKOOMUS", "KESKUSTA", "SDP", "VIHREÄT"]
+    },
+    {
+      "id": "th027",
+      "connector": "LEHTIPUITA",
+      "words": ["KOIVU", "HAAPA", "LEPPÄ", "PIHLAJA"]
+    },
+    {
+      "id": "th028",
+      "connector": "DISNEY-PRINSESSOJA",
+      "words": ["TUHKIMO", "LUMIKKI", "ARIEL", "BELLA"]
+    },
+    {
+      "id": "th029",
+      "connector": "SUOMALAISIA TV-SARJOJA",
+      "words": ["SYKE", "KARPPI", "SORJONEN", "PUTOUS"]
+    },
+    {
+      "id": "th030",
+      "connector": "SUOMALAISUUDEN KÄSITTEITÄ",
+      "words": ["SISU", "TALKOOT", "KAAMOS", "JOIKU"]
+    },
+    {
+      "id": "th031",
+      "connector": "ITALIALAISIA RUOKALAJEJA",
+      "words": ["PIZZA", "PASTA", "RISOTTO", "TIRAMISU"]
+    },
+    {
+      "id": "th032",
+      "connector": "LEGENDAARISIA SUOMALAISIA JUOKSIJOITA",
+      "words": ["NURMI", "KOLEHMAINEN", "RITOLA", "SALMINEN"]
+    },
+    {
+      "id": "th033",
+      "connector": "SUOMESSA KASVAVIA KUKKIA",
+      "words": ["VUOKKO", "KISSANKELLO", "PÄIVÄNKAKKARA", "ORVOKKI"]
+    },
+    {
+      "id": "th034",
+      "connector": "ESITYSTAIDELAJEJA",
+      "words": ["OOPPERA", "OPERETTI", "MUSIKAALI", "BALETTI"]
     }
   ]
 }
