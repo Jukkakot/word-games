@@ -150,6 +150,10 @@
   color: #ef4444;
 }
 
+.tileHinted {
+  opacity: 0.85;
+}
+
 /* ── Action buttons ── */
 .actions {
   display: flex;

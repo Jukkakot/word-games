@@ -90,6 +90,7 @@ export default function ConnectionsGame() {
   const [grid, setGrid] = useState(() => shuffle(puzzle.words))
   const [selected, setSelected] = useState<string[]>([])
   const [solvedGroups, setSolvedGroups] = useState<SolvedGroup[]>([])
+  const [hintedWords, setHintedWords] = useState<{ wordId: string; color: string }[]>([])
   const [attempts, setAttempts] = useState(0)
   const [hintsUsed, setHintsUsed] = useState(0)
   const [shaking, setShaking] = useState(false)
@@ -98,11 +99,13 @@ export default function ConnectionsGame() {
   const hintsLeft = 3 - hintsUsed
   const solvedIds = new Set(solvedGroups.flatMap(g => g.wordIds))
   const remaining = grid.filter(w => !solvedIds.has(w.id))
+  const hintMap = new Map(hintedWords.map(h => [h.wordId, h.color]))
 
   const restart = () => {
     setGrid(shuffle(puzzle.words))
     setSelected([])
     setSolvedGroups([])
+    setHintedWords([])
     setAttempts(0)
     setHintsUsed(0)
     setShaking(false)
@@ -126,6 +129,7 @@ export default function ConnectionsGame() {
       const wordTexts = match.wordIds.map(id => puzzle.words.find(w => w.id === id)!.text)
       const updated = [...solvedGroups, { ...match, wordTexts }]
       setSolvedGroups(updated)
+      setHintedWords(prev => prev.filter(h => !match.wordIds.includes(h.wordId)))
       setSelected([])
       if (updated.length === puzzle.groups.length) setGameWon(true)
     } else {
@@ -139,9 +143,19 @@ export default function ConnectionsGame() {
 
   const hint = () => {
     if (hintsLeft <= 0 || shaking) return
-    const group = puzzle.groups.find(g => !solvedGroups.some(s => s.id === g.id))
+    // Find first unsolved group that hasn't been hinted yet
+    const hintedGroupIds = new Set(hintedWords.map(h => {
+      const g = puzzle.groups.find(g => g.wordIds.includes(h.wordId))
+      return g?.id
+    }))
+    const group = puzzle.groups.find(g =>
+      !solvedGroups.some(s => s.id === g.id) && !hintedGroupIds.has(g.id)
+    )
     if (!group) return
-    setSelected(group.wordIds)
+    // Reveal 2 random words from that group
+    const shuffledIds = shuffle(group.wordIds)
+    const revealed = shuffledIds.slice(0, 2).map(wordId => ({ wordId, color: group.color }))
+    setHintedWords(prev => [...prev, ...revealed])
     setHintsUsed(h => h + 1)
   }
 
@@ -183,6 +197,7 @@ export default function ConnectionsGame() {
       <div className={styles.grid} style={{ gridTemplateRows: `repeat(${Math.ceil(remaining.length / 4)}, 1fr)` }}>
         {remaining.map(word => {
           const isSelected = selected.includes(word.id)
+          const hintColor = hintMap.get(word.id)
           return (
             <button
               key={word.id}
@@ -190,7 +205,9 @@ export default function ConnectionsGame() {
                 styles.tile,
                 isSelected ? styles.tileSelected : '',
                 isSelected && shaking ? styles.tileShake : '',
+                hintColor && !isSelected ? styles.tileHinted : '',
               ].join(' ')}
+              style={hintColor && !isSelected ? { background: hintColor, color: '#fff', borderColor: hintColor } : undefined}
               onClick={() => toggleWord(word.id)}
             >
               {word.text}
