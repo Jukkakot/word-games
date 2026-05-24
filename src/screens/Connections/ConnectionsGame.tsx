@@ -153,12 +153,13 @@ export default function ConnectionsGame() {
       const g = puzzle.groups.find(g => g.wordIds.includes(h.wordId))
       return g?.id
     }))
-    const group = puzzle.groups.find(g =>
-      !solvedGroups.some(s => s.id === g.id) && !hintedGroupIds.has(g.id)
-    )
+    const unsolvedGroups = puzzle.groups.filter(g => !solvedGroups.some(s => s.id === g.id))
+    const group = unsolvedGroups.find(g => !hintedGroupIds.has(g.id)) ?? unsolvedGroups[0]
     if (!group) return
-    const shuffledIds = shuffle(group.wordIds)
-    const revealed = shuffledIds.slice(0, 2).map(wordId => ({ wordId, color: group.color }))
+    const hintedWordIds = new Set(hintedWords.map(h => h.wordId))
+    const unhinted = group.wordIds.filter(id => !hintedWordIds.has(id))
+    const pool = unhinted.length >= 2 ? unhinted : group.wordIds
+    const revealed = shuffle(pool).slice(0, 2).map(wordId => ({ wordId, color: group.color }))
     setHintedWords(prev => [...prev, ...revealed])
     setHintsUsed(h => h + 1)
   }
