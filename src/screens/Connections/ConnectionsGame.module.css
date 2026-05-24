@@ -242,6 +242,21 @@
   color: #fff;
 }
 
+/* ── Debug banner ── */
+.debugBanner {
+  width: 100%;
+  max-width: 480px;
+  margin-top: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  background: #fff8e1;
+  border: 1.5px dashed #f59e0b;
+  border-radius: 8px;
+  font-size: 0.72rem;
+  color: #92400e;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
 /* ── Help modal ── */
 .modalOverlay {
   position: fixed;

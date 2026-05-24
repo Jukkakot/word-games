@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { testPuzzle } from './puzzleData'
-import type { SolvedGroup } from './types'
+import { generatePuzzle } from './puzzleData'
+import type { Puzzle, SolvedGroup } from './types'
 import styles from './ConnectionsGame.module.css'
 
 function shuffle<T>(arr: T[]): T[] {
@@ -72,10 +72,13 @@ function VictoryScreen({
   )
 }
 
-export default function ConnectionsGame() {
-  const puzzle = testPuzzle
+function initGame() {
+  const puzzle = generatePuzzle()
+  return { puzzle, grid: shuffle(puzzle.words) }
+}
 
-  const [grid, setGrid] = useState(() => shuffle(puzzle.words))
+export default function ConnectionsGame() {
+  const [{ puzzle, grid }, setGame] = useState(initGame)
   const [selected, setSelected] = useState<string[]>([])
   const [solvedGroups, setSolvedGroups] = useState<SolvedGroup[]>([])
   const [hintedWords, setHintedWords] = useState<{ wordId: string; color: string }[]>([])
@@ -84,14 +87,27 @@ export default function ConnectionsGame() {
   const [shaking, setShaking] = useState(false)
   const [gameWon, setGameWon] = useState(false)
   const [helpOpen, setHelpOpen] = useState(false)
+  const [debugMode, setDebugMode] = useState(false)
+
+  // D-näppäin toggleaa debug-tilan
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if ((e.key === 'd' || e.key === 'D') && !e.ctrlKey && !e.metaKey) {
+        setDebugMode(prev => !prev)
+      }
+    }
+    window.addEventListener('keydown', handler)
+    return () => window.removeEventListener('keydown', handler)
+  }, [])
 
   const hintsLeft = 3 - hintsUsed
   const solvedIds = new Set(solvedGroups.flatMap(g => g.wordIds))
   const remaining = grid.filter(w => !solvedIds.has(w.id))
   const hintMap = new Map(hintedWords.map(h => [h.wordId, h.color]))
+  const debugMap = new Map(puzzle.groups.flatMap(g => g.wordIds.map(id => [id, g.color])))
 
   const restart = () => {
-    setGrid(shuffle(puzzle.words))
+    setGame(initGame)
     setSelected([])
     setSolvedGroups([])
     setHintedWords([])
@@ -185,6 +201,12 @@ export default function ConnectionsGame() {
         {remaining.map(word => {
           const isSelected = selected.includes(word.id)
           const hintColor = hintMap.get(word.id)
+          const dbgColor = debugMode && !isSelected && !hintColor ? debugMap.get(word.id) : undefined
+          const tileStyle = hintColor && !isSelected
+            ? { background: hintColor, color: '#fff', borderColor: hintColor }
+            : dbgColor
+              ? { background: dbgColor + '28', borderColor: dbgColor, color: dbgColor }
+              : undefined
           return (
             <button
               key={word.id}
@@ -194,7 +216,7 @@ export default function ConnectionsGame() {
                 isSelected && shaking ? styles.tileShake : '',
                 hintColor && !isSelected ? styles.tileHinted : '',
               ].join(' ')}
-              style={hintColor && !isSelected ? { background: hintColor, color: '#fff', borderColor: hintColor } : undefined}
+              style={tileStyle}
               onClick={() => toggleWord(word.id)}
             >
               {word.text}
@@ -202,6 +224,12 @@ export default function ConnectionsGame() {
           )
         })}
       </div>
+
+      {debugMode && (
+        <div className={styles.debugBanner}>
+          🐛 DEBUG — {puzzle.groups.map(g => `${g.label}: ${g.wordIds.map(id => puzzle.words.find(w => w.id === id)?.text).join(', ')}`).join(' | ')}
+        </div>
+      )}
 
       <div className={styles.actions}>
         <button className={styles.btnHint} onClick={hint} disabled={hintsLeft <= 0 || shaking}>
