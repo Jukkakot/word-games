@@ -3,6 +3,8 @@ import type { Puzzle } from './types'
 
 const GROUP_COLORS = ['#e67e22', '#8e44ad', '#2980b9', '#27ae60']
 
+const sessionUsedGroupIds = new Set<string>()
+
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr]
   for (let i = a.length - 1; i > 0; i--) {
@@ -13,7 +15,11 @@ function shuffle<T>(arr: T[]): T[] {
 }
 
 export function generatePuzzle(): Puzzle {
-  const shuffled = shuffle([...rawData.groups])
+  // Reset session history if fewer than 4 unused groups remain
+  const available = rawData.groups.filter(g => !sessionUsedGroupIds.has(g.id))
+  if (available.length < 4) sessionUsedGroupIds.clear()
+
+  const shuffled = shuffle([...rawData.groups.filter(g => !sessionUsedGroupIds.has(g.id))])
   const selected: typeof rawData.groups = []
   const usedWords = new Set<string>()
 
@@ -23,6 +29,8 @@ export function generatePuzzle(): Puzzle {
     group.words.forEach(w => usedWords.add(w))
     if (selected.length === 4) break
   }
+
+  selected.forEach(g => sessionUsedGroupIds.add(g.id))
 
   const words = selected.flatMap(g =>
     g.words.map((text, wi) => ({ id: `${g.id}_w${wi}`, text }))
