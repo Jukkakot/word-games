@@ -2,12 +2,30 @@ import { Link } from 'react-router-dom'
 import styles from './Home.module.css'
 
 function ConnectionsThumb() {
-  const colors = ['#16a34a', '#0d9488', '#65a30d', '#059669']
-  const layout = [2, 0, 3, 1, 0, 3, 1, 2, 3, 1, 2, 0, 1, 2, 0, 3]
+  const tiles = [
+    { word: 'JALKA', color: '#e67e22' },
+    { word: 'KORI', color: '#8e44ad' },
+    { word: 'OTSA', color: '#e67e22' },
+    { word: 'LENTO', color: '#8e44ad' },
+    { word: 'TASKU', color: '#e67e22' },
+    { word: 'SULKA', color: '#8e44ad' },
+    { word: 'KATTO', color: '#e67e22' },
+    { word: 'SADE', color: '#2980b9' },
+    { word: 'VILLA', color: '#2980b9' },
+    { word: 'NAHKA', color: '#2980b9' },
+    { word: 'KEVYT', color: '#27ae60' },
+    { word: 'RASKAS', color: '#27ae60' },
+    { word: 'LENTO', color: '#2980b9' },
+    { word: 'YLI', color: '#27ae60' },
+    { word: 'ALI', color: '#27ae60' },
+    { word: 'JOULU', color: '#c0392b' },
+  ]
   return (
     <div className={styles.thumbGrid}>
-      {layout.map((groupIdx, i) => (
-        <div key={i} className={styles.thumbTile} style={{ background: colors[groupIdx] }} />
+      {tiles.map((t, i) => (
+        <div key={i} className={styles.thumbTile} style={{ background: t.color }}>
+          {t.word}
+        </div>
       ))}
     </div>
   )
