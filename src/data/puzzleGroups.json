@@ -231,48 +231,5 @@
       "words": ["PALO", "HÄKÄ", "KAASU", "MELU"],
       "compounds": ["palovaroitin", "häkävaroitin", "kaasuvaroitin", "meluvaroitin"]
     }
-  ],
-
-  "suggestedPuzzles": [
-    {
-      "id": "puzzle-001",
-      "title": "Klassikko (IS.fi-esimerkki)",
-      "groups": ["g001", "g002", "g003", "g004"]
-    },
-    {
-      "id": "puzzle-002",
-      "title": "Koti ja urheilu",
-      "groups": ["g005", "g006", "g007", "g038"]
-    },
-    {
-      "id": "puzzle-003",
-      "title": "Kaupat ja kellot",
-      "groups": ["g008", "g009", "g011", "g019"]
-    },
-    {
-      "id": "puzzle-004",
-      "title": "Liikenne ja paikat",
-      "groups": ["g012", "g013", "g015", "g018"]
-    },
-    {
-      "id": "puzzle-005",
-      "title": "Koulut ja kentät",
-      "groups": ["g016", "g017", "g022", "g025"]
-    },
-    {
-      "id": "puzzle-006",
-      "title": "Kirjat ja listat",
-      "groups": ["g020", "g021", "g028", "g034"]
-    },
-    {
-      "id": "puzzle-007",
-      "title": "Putket ja lasit",
-      "groups": ["g029", "g030", "g037", "g038"]
-    },
-    {
-      "id": "puzzle-008",
-      "title": "Vuodenajat ja loma",
-      "groups": ["g026", "g024", "g035", "g039"]
-    }
   ]
 }
