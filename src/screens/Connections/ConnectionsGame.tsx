@@ -20,53 +20,41 @@ function victoryTitle(attempts: number, avg: number): string {
   return '🥉 Selvitit sen!'
 }
 
+function HelpModal({ onClose }: { onClose: () => void }) {
+  return (
+    <div className={styles.modalOverlay} onClick={onClose}>
+      <div className={styles.modal} onClick={e => e.stopPropagation()}>
+        <h2 className={styles.modalTitle}>Peliohjeet</h2>
+        <p>Etsi neljän sanan ryhmät, joilla on jotain yhteistä.</p>
+        <p>Valitse neljä sanaa ja paina <strong>Tarkista</strong> — yritä selvitä mahdollisimman vähillä arvauksilla!</p>
+        <p>Voit käyttää korkeintaan 3 vihjettä pelin aikana. Vihje paljastaa kaksi sanaa yhdestä kategoriasta. Jokainen vihje lasketaan yhdeksi yritykseksi.</p>
+        <div className={styles.modalExamples}>
+          <p><strong>Esimerkkejä ryhmistä:</strong></p>
+          <p><strong>ELÄIMET:</strong> kissa, hevonen, kilpikonna, norsu</p>
+          <p><strong>LEHTI_:</strong> vihreä, kioski, mainos, taikina</p>
+        </div>
+        <p className={styles.modalWarning}>Jokaisella pelillä on vain yksi oikea ratkaisu. Varo sanoja, jotka voisivat kuulua useisiin kategorioihin!</p>
+        <button className={styles.btnClose} onClick={onClose}>Sulje</button>
+      </div>
+    </div>
+  )
+}
+
 function VictoryScreen({
   attempts,
-  hintsUsed,
   solvedGroups,
   avgAttempts,
-  avgHints,
   onRestart,
 }: {
   attempts: number
-  hintsUsed: number
   solvedGroups: SolvedGroup[]
   avgAttempts: number
-  avgHints: number
   onRestart: () => void
 }) {
-  const [copied, setCopied] = useState(false)
-
-  const shareText =
-    `Löydä neljän ryhmiä!\n` +
-    `Yritykset: ${attempts} (joista ${hintsUsed} vihjeitä)\n` +
-    `Pelaajien keskiarvo: ${avgAttempts} (joista ${avgHints} vihjeitä)`
-
-  const share = () => {
-    navigator.clipboard.writeText(shareText).then(() => {
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
-    })
-  }
-
-  const beatsAvg = attempts < avgAttempts
-
   return (
     <div className={styles.container}>
       <div className={styles.victory}>
         <h1 className={styles.victoryTitle}>{victoryTitle(attempts, avgAttempts)}</h1>
-        <p className={styles.victoryAttempts}>
-          Yritykset: <strong>{attempts}</strong>
-          {hintsUsed > 0 && ` (joista ${hintsUsed} vihjeitä)`}
-        </p>
-        <p className={styles.victoryCompare}>
-          {beatsAvg
-            ? `Päihitit pelaajien keskiarvon joka oli ${avgAttempts}. Saatko huomenna ratkaistua neljällä yrityksellä?`
-            : `Pelaajien keskiarvo oli ${avgAttempts} yritystä.`}
-        </p>
-        <button className={styles.btnShare} onClick={share}>
-          {copied ? '✓ Kopioitu!' : '🔗 Jaa tulos'}
-        </button>
         <div className={styles.victoryGroups}>
           {solvedGroups.map(g => (
             <div key={g.id} className={styles.solvedBanner} style={{ background: g.color }}>
@@ -95,6 +83,7 @@ export default function ConnectionsGame() {
   const [hintsUsed, setHintsUsed] = useState(0)
   const [shaking, setShaking] = useState(false)
   const [gameWon, setGameWon] = useState(false)
+  const [helpOpen, setHelpOpen] = useState(false)
 
   const hintsLeft = 3 - hintsUsed
   const solvedIds = new Set(solvedGroups.flatMap(g => g.wordIds))
@@ -143,7 +132,6 @@ export default function ConnectionsGame() {
 
   const hint = () => {
     if (hintsLeft <= 0 || shaking) return
-    // Find first unsolved group that hasn't been hinted yet
     const hintedGroupIds = new Set(hintedWords.map(h => {
       const g = puzzle.groups.find(g => g.wordIds.includes(h.wordId))
       return g?.id
@@ -152,7 +140,6 @@ export default function ConnectionsGame() {
       !solvedGroups.some(s => s.id === g.id) && !hintedGroupIds.has(g.id)
     )
     if (!group) return
-    // Reveal 2 random words from that group
     const shuffledIds = shuffle(group.wordIds)
     const revealed = shuffledIds.slice(0, 2).map(wordId => ({ wordId, color: group.color }))
     setHintedWords(prev => [...prev, ...revealed])
@@ -163,10 +150,8 @@ export default function ConnectionsGame() {
     return (
       <VictoryScreen
         attempts={attempts}
-        hintsUsed={hintsUsed}
         solvedGroups={solvedGroups}
         avgAttempts={puzzle.avgAttempts}
-        avgHints={puzzle.avgHints}
         onRestart={restart}
       />
     )
@@ -174,12 +159,14 @@ export default function ConnectionsGame() {
 
   return (
     <div className={styles.container}>
+      {helpOpen && <HelpModal onClose={() => setHelpOpen(false)} />}
+
       <header className={styles.header}>
-        <Link to="/" className={styles.backLink}>← Pelit</Link>
+        <div className={styles.headerRow}>
+          <Link to="/" className={styles.btnBack}>← Pelit</Link>
+          <button className={styles.btnHelp} onClick={() => setHelpOpen(true)}>?</button>
+        </div>
         <h1 className={styles.title}>Löydä neljän ryhmiä!</h1>
-        <p className={styles.stats}>
-          Pelaajien keskiarvo tänään on {puzzle.avgAttempts} yritystä, joista {puzzle.avgHints} oli vihjeitä.
-        </p>
         <p className={styles.attemptsRow}>
           Yritykset: <span className={styles.attemptsNum}>{attempts}</span>
         </p>
