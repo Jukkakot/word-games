@@ -758,7 +758,7 @@
     },
     {
       "id": "th022",
-      "connector": "SUOMALAISIA JUHLAPERINTEITÄ",
+      "connector": "SUOMALAISIA JUHLAPÄIVIÄ",
       "words": [
         "JUHANNUS",
         "JOULU",
@@ -1092,7 +1092,7 @@
         "TUNNUS"
       ],
       "compounds": [
-        "avain sana",
+        "avainsana",
         "taikasana",
         "salasana",
         "tunnussana"
