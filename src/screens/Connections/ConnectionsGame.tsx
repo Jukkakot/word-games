@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { generatePuzzle } from './puzzleData'
-import type { Puzzle, SolvedGroup } from './types'
+import type { SolvedGroup } from './types'
 import styles from './ConnectionsGame.module.css'
 
 function shuffle<T>(arr: T[]): T[] {

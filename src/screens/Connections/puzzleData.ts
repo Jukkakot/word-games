@@ -24,7 +24,7 @@ export function generatePuzzle(): Puzzle {
     if (selected.length === 4) break
   }
 
-  const words = selected.flatMap((g, gi) =>
+  const words = selected.flatMap(g =>
     g.words.map((text, wi) => ({ id: `${g.id}_w${wi}`, text }))
   )
 
