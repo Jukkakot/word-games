@@ -1,382 +1,1214 @@
 {
   "_info": "Yhteydet-pelin ryhmäehdotukset. Jokainen ryhmä sisältää 4 sanaa jotka yhdistyvät samaan liitososaan. 'words' = näytettävät sanat (ISOLLA), 'connector' = liitososa, 'compounds' = yhdyssanat validointia varten.",
   "_huom": "Sanat voivat esiintyä eri puzzleissa, mutta eivät koskaan kahdessa ryhmässä saman puzzlen sisällä.",
-
   "groups": [
     {
       "id": "g001",
       "connector": "-lamppu",
-      "words": ["TASKU", "OTSA", "JALKA", "KATTO"],
-      "compounds": ["taskulamppu", "otsalamppu", "jalkalamppu", "kattolamppu"]
+      "words": [
+        "TASKU",
+        "OTSA",
+        "JALKA",
+        "KATTO"
+      ],
+      "compounds": [
+        "taskulamppu",
+        "otsalamppu",
+        "jalkalamppu",
+        "kattolamppu"
+      ]
     },
     {
       "id": "g002",
       "connector": "-kaappi",
-      "words": ["JÄÄ", "ASTIA", "KENKÄ", "AVAIN"],
-      "compounds": ["jääkaappi", "astiakaappi", "kenkäkaappi", "avainkaappi"]
+      "words": [
+        "JÄÄ",
+        "ASTIA",
+        "KENKÄ",
+        "AVAIN"
+      ],
+      "compounds": [
+        "jääkaappi",
+        "astiakaappi",
+        "kenkäkaappi",
+        "avainkaappi"
+      ]
     },
     {
       "id": "g003",
       "connector": "-karva",
-      "words": ["RINTA", "SÄÄRI", "KULMA", "VIIKSI"],
-      "compounds": ["rintakarva", "säärikarva", "kulmakarva", "viiksikarva"]
+      "words": [
+        "RINTA",
+        "SÄÄRI",
+        "KULMA",
+        "VIIKSI"
+      ],
+      "compounds": [
+        "rintakarva",
+        "säärikarva",
+        "kulmakarva",
+        "viiksikarva"
+      ]
     },
     {
       "id": "g004",
       "connector": "-taulu",
-      "words": ["LIITU", "NAAMA", "TIKKA", "VALO"],
-      "compounds": ["liitutaulu", "naamataulu", "tikkataulu", "valotaulu"]
+      "words": [
+        "LIITU",
+        "NAAMA",
+        "TIKKA",
+        "VALO"
+      ],
+      "compounds": [
+        "liitutaulu",
+        "naamataulu",
+        "tikkataulu",
+        "valotaulu"
+      ]
     },
     {
       "id": "g005",
       "connector": "-huone",
-      "words": ["TYÖ", "KYLPY", "KASVI", "OLO"],
-      "compounds": ["työhuone", "kylpyhuone", "kasvihuone", "olohuone"]
+      "words": [
+        "TYÖ",
+        "KYLPY",
+        "KASVI",
+        "OLO"
+      ],
+      "compounds": [
+        "työhuone",
+        "kylpyhuone",
+        "kasvihuone",
+        "olohuone"
+      ]
     },
     {
       "id": "g006",
       "connector": "-pallo",
-      "words": ["JALKA", "KORI", "LENTO", "SULKA"],
-      "compounds": ["jalkapallo", "koripallo", "lentopallo", "sulkapallo"]
+      "words": [
+        "JALKA",
+        "KORI",
+        "LENTO",
+        "SULKA"
+      ],
+      "compounds": [
+        "jalkapallo",
+        "koripallo",
+        "lentopallo",
+        "sulkapallo"
+      ]
     },
     {
       "id": "g007",
       "connector": "-talo",
-      "words": ["KERROS", "RIVI", "PARI", "OMAKOTI"],
-      "compounds": ["kerrostalo", "rivitalo", "paritalo", "omakotitalo"]
+      "words": [
+        "KERROS",
+        "RIVI",
+        "PARI",
+        "OMAKOTI"
+      ],
+      "compounds": [
+        "kerrostalo",
+        "rivitalo",
+        "paritalo",
+        "omakotitalo"
+      ]
     },
     {
       "id": "g008",
       "connector": "-kauppa",
-      "words": ["KUKKA", "KIRJA", "VAATE", "LEVY"],
-      "compounds": ["kukkakauppa", "kirjakauppa", "vaatekauppa", "levykauppa"]
+      "words": [
+        "KUKKA",
+        "KIRJA",
+        "VAATE",
+        "LEVY"
+      ],
+      "compounds": [
+        "kukkakauppa",
+        "kirjakauppa",
+        "vaatekauppa",
+        "levykauppa"
+      ]
     },
     {
       "id": "g009",
       "connector": "-kello",
-      "words": ["RANNE", "HERÄTYS", "SEINÄ", "PÖYTÄ"],
-      "compounds": ["rannekello", "herätyskello", "seinäkello", "pöytäkello"]
+      "words": [
+        "RANNE",
+        "HERÄTYS",
+        "SEINÄ",
+        "KAAPPI"
+      ],
+      "compounds": [
+        "rannekello",
+        "herätyskello",
+        "seinäkello",
+        "kaappikello"
+      ]
     },
     {
       "id": "g012",
       "connector": "-lippu",
-      "words": ["BUSSI", "JUNA", "LENTO", "LAIVA"],
-      "compounds": ["bussilippu", "junalippu", "lentolippu", "laivalippu"]
+      "words": [
+        "BUSSI",
+        "JUNA",
+        "LENTO",
+        "FESTARI"
+      ],
+      "compounds": [
+        "bussilippu",
+        "junalippu",
+        "lentolippu",
+        "festarilippu"
+      ]
     },
     {
       "id": "g013",
       "connector": "-kori",
-      "words": ["PYYKKI", "OSTOS", "PAPERI", "HEDELMÄ"],
-      "compounds": ["pyykkikori", "ostoskori", "paperikori", "hedelmäkori"]
+      "words": [
+        "PYYKKI",
+        "OSTOS",
+        "PAPERI",
+        "HEDELMÄ"
+      ],
+      "compounds": [
+        "pyykkikori",
+        "ostoskori",
+        "paperikori",
+        "hedelmäkori"
+      ]
     },
     {
       "id": "g014",
       "connector": "-pöytä",
-      "words": ["KIRJOITUS", "KAHVI", "SOHVA", "PELI"],
-      "compounds": ["kirjoituspöytä", "kahvipöytä", "sohvapöytä", "pelipöytä"]
+      "words": [
+        "KIRJOITUS",
+        "KAHVI",
+        "SOHVA",
+        "PELI"
+      ],
+      "compounds": [
+        "kirjoituspöytä",
+        "kahvipöytä",
+        "sohvapöytä",
+        "pelipöytä"
+      ]
     },
     {
       "id": "g015",
       "connector": "-asema",
-      "words": ["POLIISI", "HUOLTO", "PALO", "METRO"],
-      "compounds": ["poliisiasema", "huoltoasema", "paloasema", "metroasema"]
+      "words": [
+        "POLIISI",
+        "HUOLTO",
+        "PALO",
+        "METRO"
+      ],
+      "compounds": [
+        "poliisiasema",
+        "huoltoasema",
+        "paloasema",
+        "metroasema"
+      ]
     },
     {
       "id": "g016",
       "connector": "-auto",
-      "words": ["PAKETTI", "POSTI", "ROSKA", "HENKILÖ"],
-      "compounds": ["pakettiauto", "postiauto", "roskaauto", "henkilöauto"]
+      "words": [
+        "PAKETTI",
+        "POSTI",
+        "ROSKA",
+        "HENKILÖ"
+      ],
+      "compounds": [
+        "pakettiauto",
+        "postiauto",
+        "roskaauto",
+        "henkilöauto"
+      ]
     },
     {
       "id": "g017",
       "connector": "-koulu",
-      "words": ["ALA", "YLÄ", "AMMATTI", "PERUS"],
-      "compounds": ["alakoulu", "yläkoulu", "ammattikoulu", "peruskoulu"]
+      "words": [
+        "ALA",
+        "YLÄ",
+        "AMMATTI",
+        "PERUS"
+      ],
+      "compounds": [
+        "alakoulu",
+        "yläkoulu",
+        "ammattikoulu",
+        "peruskoulu"
+      ]
     },
     {
       "id": "g019",
       "connector": "-puu",
-      "words": ["OMENA", "LUUMU", "KIRSIKKA", "PÄÄRYNÄ"],
-      "compounds": ["omenapuu", "luumupuu", "kirsikkapuu", "päärynäpuu"]
+      "words": [
+        "OMENA",
+        "LUUMU",
+        "KIRSIKKA",
+        "PÄÄRYNÄ"
+      ],
+      "compounds": [
+        "omenapuu",
+        "luumupuu",
+        "kirsikkapuu",
+        "päärynäpuu"
+      ]
     },
     {
       "id": "g020",
       "connector": "-kirja",
-      "words": ["OPPI", "KUVA", "VIERAS", "TILI"],
-      "compounds": ["oppikirja", "kuvakirja", "vieraskirja", "tilikirja"]
+      "words": [
+        "OPPI",
+        "KUVA",
+        "VIERAS",
+        "TILI"
+      ],
+      "compounds": [
+        "oppikirja",
+        "kuvakirja",
+        "vieraskirja",
+        "tilikirja"
+      ]
     },
     {
       "id": "g021",
       "connector": "-lista",
-      "words": ["OSTOS", "TOIVE", "RUOKA", "KAUPPA"],
-      "compounds": ["ostoslista", "toivelista", "ruokalista", "kauppalista"]
+      "words": [
+        "OSTOS",
+        "TOIVE",
+        "RUOKA",
+        "KAUPPA"
+      ],
+      "compounds": [
+        "ostoslista",
+        "toivelista",
+        "ruokalista",
+        "kauppalista"
+      ]
     },
     {
       "id": "g022",
       "connector": "-kenttä",
-      "words": ["LENTO", "JÄÄ", "TENNIS", "URHEILU"],
-      "compounds": ["lentokenttä", "jääkenttä", "tenniskenttä", "urheilukenttä"]
+      "words": [
+        "LENTO",
+        "JÄÄ",
+        "TENNIS",
+        "URHEILU"
+      ],
+      "compounds": [
+        "lentokenttä",
+        "jääkenttä",
+        "tenniskenttä",
+        "urheilukenttä"
+      ]
     },
     {
       "id": "g024",
       "connector": "-mies",
-      "words": ["PALO", "LIIKE", "SOTA", "SÄHKÖ"],
-      "compounds": ["palomies", "liikemies", "sotamies", "sähkömies"]
+      "words": [
+        "PALO",
+        "LIIKE",
+        "SOTA",
+        "SÄHKÖ"
+      ],
+      "compounds": [
+        "palomies",
+        "liikemies",
+        "sotamies",
+        "sähkömies"
+      ]
     },
     {
       "id": "g025",
       "connector": "-päivä",
-      "words": ["SYNTYMÄ", "JOULU", "NIMI", "LOMA"],
-      "compounds": ["syntymäpäivä", "joulupäivä", "nimipäivä", "lomapäivä"]
+      "words": [
+        "SYNTYMÄ",
+        "JOULU",
+        "NIMI",
+        "LOMA"
+      ],
+      "compounds": [
+        "syntymäpäivä",
+        "joulupäivä",
+        "nimipäivä",
+        "lomapäivä"
+      ]
     },
     {
       "id": "g026",
       "connector": "-loma",
-      "words": ["KESÄ", "TALVI", "SYYS", "HIIHTO"],
-      "compounds": ["kesäloma", "talviloma", "syysloma", "hiihtoloma"]
+      "words": [
+        "KESÄ",
+        "TALVI",
+        "SYYS",
+        "HIIHTO"
+      ],
+      "compounds": [
+        "kesäloma",
+        "talviloma",
+        "syysloma",
+        "hiihtoloma"
+      ]
     },
     {
       "id": "g027",
       "connector": "-loma",
-      "words": ["KESÄ", "JOULU", "HIIHTO", "KEVÄT"],
-      "compounds": ["kesäloma", "joululoma", "hiihtoloma", "kevätloma"]
+      "words": [
+        "KESÄ",
+        "JOULU",
+        "HIIHTO",
+        "SYYS"
+      ],
+      "compounds": [
+        "kesäloma",
+        "joululoma",
+        "hiihtoloma",
+        "syysloma"
+      ]
     },
     {
       "id": "g028",
       "connector": "-paikka",
-      "words": ["LEPO", "TYÖ", "SYNTYMÄ", "ASUIN"],
-      "compounds": ["lepopaikka", "työpaikka", "syntymäpaikka", "asuinpaikka"]
+      "words": [
+        "LEPO",
+        "TYÖ",
+        "SYNTYMÄ",
+        "ASUIN"
+      ],
+      "compounds": [
+        "lepopaikka",
+        "työpaikka",
+        "syntymäpaikka",
+        "asuinpaikka"
+      ]
     },
     {
       "id": "g030",
       "connector": "-lasi",
-      "words": ["SILMÄ", "TUULI", "IKKUNA", "AURINKO"],
-      "compounds": ["silmälasi", "tuulilasi", "ikkunalasi", "aurinkolasi"]
+      "words": [
+        "SILMÄ",
+        "TUULI",
+        "IKKUNA",
+        "AURINKO"
+      ],
+      "compounds": [
+        "silmälasi",
+        "tuulilasi",
+        "ikkunalasi",
+        "aurinkolasi"
+      ]
     },
     {
       "id": "g032",
       "connector": "-lusikka",
-      "words": ["KAHVI", "TEE", "KEITTO", "RUOKA"],
-      "compounds": ["kahvilusikka", "teelusikka", "keittolusikka", "ruokalusikka"]
+      "words": [
+        "KAHVI",
+        "TEE",
+        "KEITTO",
+        "RUOKA"
+      ],
+      "compounds": [
+        "kahvilusikka",
+        "teelusikka",
+        "keittolusikka",
+        "ruokalusikka"
+      ]
     },
     {
       "id": "g033",
       "connector": "-matka",
-      "words": ["KOULU", "JUNA", "MERI", "LENTO"],
-      "compounds": ["koulumatka", "junamatka", "merimatka", "lentomatka"]
+      "words": [
+        "KOULU",
+        "JUNA",
+        "HALPA",
+        "LENTO"
+      ],
+      "compounds": [
+        "koulumatka",
+        "junamatka",
+        "halpamatka",
+        "lentomatka"
+      ]
     },
     {
       "id": "g034",
       "connector": "-piha",
-      "words": ["KOULU", "KOTI", "SISÄ", "TAKA"],
-      "compounds": ["koulupiha", "kotipiha", "sisäpiha", "takapiha"]
+      "words": [
+        "ETU",
+        "KOTI",
+        "SISÄ",
+        "TAKA"
+      ],
+      "compounds": [
+        "etupiha",
+        "kotipiha",
+        "sisäpiha",
+        "takapiha"
+      ]
     },
     {
       "id": "g035",
       "connector": "-penkki",
-      "words": ["TYÖ", "KOULU", "KIRKKO", "PUISTO"],
-      "compounds": ["työpenkki", "koulupenkki", "kirkkopenkki", "puistopenkki"]
+      "words": [
+        "TYÖ",
+        "KOULU",
+        "KIRKKO",
+        "PUISTO"
+      ],
+      "compounds": [
+        "työpenkki",
+        "koulupenkki",
+        "kirkkopenkki",
+        "puistopenkki"
+      ]
     },
     {
       "id": "g036",
       "connector": "-lauta",
-      "words": ["LEIKKUU", "SURFFI", "LUMI", "SKEITTI"],
-      "compounds": ["leikkuulauta", "surffilauta", "lumilauta", "skeittilauta"]
+      "words": [
+        "LEIKKUU",
+        "SURFFI",
+        "LUMI",
+        "SKEITTI"
+      ],
+      "compounds": [
+        "leikkuulauta",
+        "surffilauta",
+        "lumilauta",
+        "skeittilauta"
+      ]
     },
     {
       "id": "g037",
       "connector": "-peli",
-      "words": ["LAUTA", "KORTTI", "VIDEO", "TIETOKONE"],
-      "compounds": ["lautapeli", "korttipeli", "videopeli", "tietokonepeli"]
+      "words": [
+        "LAUTA",
+        "KORTTI",
+        "VIDEO",
+        "TIETOKONE"
+      ],
+      "compounds": [
+        "lautapeli",
+        "korttipeli",
+        "videopeli",
+        "tietokonepeli"
+      ]
     },
     {
       "id": "g038",
       "connector": "-vene",
-      "words": ["SOUTU", "MOOTTORI", "PURJE", "PELASTUS"],
-      "compounds": ["soutuvene", "moottorivene", "purjevene", "pelastusvene"]
+      "words": [
+        "SOUTU",
+        "MOOTTORI",
+        "PURJE",
+        "PELASTUS"
+      ],
+      "compounds": [
+        "soutuvene",
+        "moottorivene",
+        "purjevene",
+        "pelastusvene"
+      ]
     },
     {
       "id": "g039",
       "connector": "-ovi",
-      "words": ["SISÄ", "ULKO", "ETU", "PALO"],
-      "compounds": ["sisäovi", "ulko-ovi", "etuovi", "palo-ovi"]
+      "words": [
+        "SISÄ",
+        "ULKO",
+        "ETU",
+        "PALO"
+      ],
+      "compounds": [
+        "sisäovi",
+        "ulko-ovi",
+        "etuovi",
+        "palo-ovi"
+      ]
     },
     {
       "id": "g040",
       "connector": "-tunti",
-      "words": ["LIIKUNTA", "MUSIIKKI", "KUVATAIDE", "KÄSITYÖ"],
-      "compounds": ["liikuntatunti", "musiikkitunti", "kuvataidetunti", "käsityötunti"]
-    },
-    {
-      "id": "g041",
-      "connector": "-varoitin",
-      "words": ["PALO", "HÄKÄ", "KAASU", "MELU"],
-      "compounds": ["palovaroitin", "häkävaroitin", "kaasuvaroitin", "meluvaroitin"]
+      "words": [
+        "LIIKUNTA",
+        "OPPI",
+        "KUVATAIDE",
+        "KÄSITYÖ"
+      ],
+      "compounds": [
+        "liikuntatunti",
+        "oppitunti",
+        "kuvataidetunti",
+        "käsityötunti"
+      ]
     },
     {
       "id": "th001",
       "connector": "KANSANTANSSEJA",
-      "words": ["POLSKA", "POLKKA", "SOTTIISI", "MASURKKA"]
+      "words": [
+        "POLSKA",
+        "POLKKA",
+        "SOTTIISI",
+        "MASURKKA"
+      ]
     },
     {
       "id": "th002",
       "connector": "MARJOJA",
-      "words": ["MUSTIKKA", "PUOLUKKA", "VADELMA", "MANSIKKA"]
+      "words": [
+        "MUSTIKKA",
+        "PUOLUKKA",
+        "VADELMA",
+        "MANSIKKA"
+      ]
     },
     {
       "id": "th003",
       "connector": "SUOMEN SUURIMPIA JÄRVIÄ",
-      "words": ["SAIMAA", "PÄIJÄNNE", "PIELINEN", "INARI"]
+      "words": [
+        "SAIMAA",
+        "PÄIJÄNNE",
+        "PIELINEN",
+        "INARI"
+      ]
     },
     {
       "id": "th004",
       "connector": "HAVUPUITA",
-      "words": ["MÄNTY", "KUUSI", "LEHTIKUUSI", "KATAJA"]
+      "words": [
+        "MÄNTY",
+        "KUUSI",
+        "LEHTIKUUSI",
+        "KATAJA"
+      ]
     },
     {
       "id": "th005",
       "connector": "SUOMALAISIA PETOELÄIMIÄ",
-      "words": ["KARHU", "SUSI", "ILVES", "AHMA"]
+      "words": [
+        "KARHU",
+        "SUSI",
+        "ILVES",
+        "AHMA"
+      ]
     },
     {
       "id": "th006",
       "connector": "SUOMALAISIA PERINNERUOKIA",
-      "words": ["KARJALANPIIRAKKA", "LOHIKEITTO", "HERNEKEITTO", "MUSTAMAKKARA"]
+      "words": [
+        "KARJALANPIIRAKKA",
+        "LOHIKEITTO",
+        "HERNEKEITTO",
+        "MUSTAMAKKARA"
+      ]
     },
     {
       "id": "th007",
       "connector": "KAHVILAN LEIVONNAISIA",
-      "words": ["KORVAPUUSTI", "MUNKKI", "PULLA", "VIINERI"]
+      "words": [
+        "KORVAPUUSTI",
+        "MUNKKI",
+        "PULLA",
+        "VIINERI"
+      ]
     },
     {
       "id": "th008",
       "connector": "TALVIOLYMPIALAJEJA",
-      "words": ["HIIHTO", "MÄKIHYPPY", "CURLING", "LUISTELU"]
+      "words": [
+        "HIIHTO",
+        "MÄKIHYPPY",
+        "CURLING",
+        "LUISTELU"
+      ]
     },
     {
       "id": "th009",
       "connector": "SUOMALAISIA F1-KULJETTAJIA",
-      "words": ["HÄKKINEN", "RÄIKKÖNEN", "BOTTAS", "KOVALAINEN"]
+      "words": [
+        "HÄKKINEN",
+        "RÄIKKÖNEN",
+        "BOTTAS",
+        "KOVALAINEN"
+      ]
     },
     {
       "id": "th010",
       "connector": "MUUMIHAHMOJA",
-      "words": ["MUUMIPAPPA", "NUUSKAMUIKKUNEN", "NIISKUNEITI", "HEMULI"]
+      "words": [
+        "MÖRKÖ",
+        "NUUSKAMUIKKUNEN",
+        "NIISKUNEITI",
+        "HEMULI"
+      ]
     },
     {
       "id": "th011",
       "connector": "SUOMALAISIA KIRJAILIJOITA",
-      "words": ["KIVI", "WALTARI", "LINNA", "SILLANPÄÄ"]
+      "words": [
+        "KIVI",
+        "WALTARI",
+        "LINNA",
+        "SILLANPÄÄ"
+      ]
     },
     {
       "id": "th012",
       "connector": "SUOMALAISIA ROCKBÄNDEJÄ",
-      "words": ["HIM", "NIGHTWISH", "APOCALYPTICA", "LORDI"]
+      "words": [
+        "HIM",
+        "NIGHTWISH",
+        "APOCALYPTICA",
+        "LORDI"
+      ]
     },
     {
       "id": "th013",
       "connector": "SUOMEN MAAKUNTIA",
-      "words": ["LAPPI", "UUSIMAA", "PIRKANMAA", "SATAKUNTA"]
+      "words": [
+        "LAPPI",
+        "UUSIMAA",
+        "PIRKANMAA",
+        "SATAKUNTA"
+      ]
     },
     {
       "id": "th014",
       "connector": "POHJOISMAIDEN PÄÄKAUPUNKEJA",
-      "words": ["TUKHOLMA", "OSLO", "KÖÖPENHAMINA", "REYKJAVIK"]
+      "words": [
+        "TUKHOLMA",
+        "OSLO",
+        "KÖÖPENHAMINA",
+        "REYKJAVIK"
+      ]
     },
     {
       "id": "th015",
       "connector": "SUOMEN NAAPURIMAITA",
-      "words": ["RUOTSI", "NORJA", "VENÄJÄ", "VIRO"]
+      "words": [
+        "RUOTSI",
+        "NORJA",
+        "VENÄJÄ",
+        "VIRO"
+      ]
     },
     {
       "id": "th016",
       "connector": "JOUSISOITTIMIA",
-      "words": ["VIULU", "SELLO", "ALTTOVIULU", "KONTRABASSO"]
+      "words": [
+        "VIULU",
+        "SELLO",
+        "ALTTOVIULU",
+        "KONTRABASSO"
+      ]
     },
     {
       "id": "th017",
       "connector": "PUUPUHALLINSOITTIMIA",
-      "words": ["HUILU", "OBOE", "KLARINETTI", "FAGOTTI"]
+      "words": [
+        "HUILU",
+        "OBOE",
+        "KLARINETTI",
+        "FAGOTTI"
+      ]
     },
     {
       "id": "th018",
       "connector": "KORTTIPELEJÄ",
-      "words": ["PASIANSSI", "POKERI", "BRIDGE", "CANASTA"]
+      "words": [
+        "PASIANSSI",
+        "POKERI",
+        "BRIDGE",
+        "CANASTA"
+      ]
     },
     {
       "id": "th019",
       "connector": "SAUNAAN KUULUVIA",
-      "words": ["LÖYLY", "KIUAS", "VIHTA", "LAUTEET"]
+      "words": [
+        "LÖYLY",
+        "KIUAS",
+        "VIHTA",
+        "LAUTEET"
+      ]
     },
     {
       "id": "th020",
       "connector": "ULOMPIA PLANEETTOJA",
-      "words": ["JUPITER", "SATURNUS", "URANUS", "NEPTUNUS"]
+      "words": [
+        "JUPITER",
+        "SATURNUS",
+        "URANUS",
+        "NEPTUNUS"
+      ]
     },
     {
       "id": "th021",
       "connector": "SUOMEN YLEISIÄ LINTUJA",
-      "words": ["TALITIAINEN", "PEIPPO", "VARPUNEN", "HARAKKA"]
+      "words": [
+        "TALITIAINEN",
+        "PEIPPO",
+        "VARPUNEN",
+        "HARAKKA"
+      ]
     },
     {
       "id": "th022",
       "connector": "SUOMALAISIA JUHLAPERINTEITÄ",
-      "words": ["JUHANNUS", "JOULU", "PÄÄSIÄINEN", "VAPPU"]
+      "words": [
+        "JUHANNUS",
+        "JOULU",
+        "PÄÄSIÄINEN",
+        "VAPPU"
+      ]
     },
     {
       "id": "th023",
       "connector": "SUOMALAISIA METSÄNELÄIMIÄ",
-      "words": ["SIILI", "KETTU", "JÄNIS", "ORAVA"]
+      "words": [
+        "SIILI",
+        "KETTU",
+        "JÄNIS",
+        "ORAVA"
+      ]
     },
     {
       "id": "th024",
       "connector": "SUOMALAISIA RALLI-KULJETTAJIA",
-      "words": ["MÄKINEN", "GRÖNHOLM", "LATVALA", "ROVANPERÄ"]
+      "words": [
+        "MÄKINEN",
+        "GRÖNHOLM",
+        "LATVALA",
+        "ROVANPERÄ"
+      ]
     },
     {
       "id": "th025",
       "connector": "VESIALUEIDEN TYYPPEJÄ",
-      "words": ["JOKI", "MERI", "LAMPI", "PURO"]
+      "words": [
+        "JOKI",
+        "MERI",
+        "LAMPI",
+        "PURO"
+      ]
     },
     {
       "id": "th026",
       "connector": "SUOMALAISIA PUOLUEITA",
-      "words": ["KOKOOMUS", "KESKUSTA", "SDP", "VIHREÄT"]
+      "words": [
+        "KOKOOMUS",
+        "KESKUSTA",
+        "SDP",
+        "VIHREÄT"
+      ]
     },
     {
       "id": "th027",
       "connector": "LEHTIPUITA",
-      "words": ["KOIVU", "HAAPA", "LEPPÄ", "PIHLAJA"]
+      "words": [
+        "KOIVU",
+        "HAAPA",
+        "LEPPÄ",
+        "PIHLAJA"
+      ]
     },
     {
       "id": "th028",
       "connector": "DISNEY-PRINSESSOJA",
-      "words": ["TUHKIMO", "LUMIKKI", "ARIEL", "BELLA"]
+      "words": [
+        "TUHKIMO",
+        "LUMIKKI",
+        "ARIEL",
+        "BELL"
+      ]
     },
     {
       "id": "th029",
       "connector": "SUOMALAISIA TV-SARJOJA",
-      "words": ["SYKE", "KARPPI", "SORJONEN", "PUTOUS"]
+      "words": [
+        "SYKE",
+        "KARPPI",
+        "SORJONEN",
+        "PUTOUS"
+      ]
     },
     {
       "id": "th030",
       "connector": "SUOMALAISUUDEN KÄSITTEITÄ",
-      "words": ["SISU", "SAUNA", "RUISLEIPÄ", "HAUKI"]
+      "words": [
+        "SISU",
+        "SAUNA",
+        "RUISLEIPÄ",
+        "HAUKI"
+      ]
     },
     {
       "id": "th031",
       "connector": "ITALIALAISIA RUOKALAJEJA",
-      "words": ["PIZZA", "PASTA", "RISOTTO", "TIRAMISU"]
+      "words": [
+        "PIZZA",
+        "PASTA",
+        "RISOTTO",
+        "TIRAMISU"
+      ]
     },
     {
       "id": "th033",
       "connector": "SUOMESSA KASVAVIA KUKKIA",
-      "words": ["VUOKKO", "KISSANKELLO", "PÄIVÄNKAKKARA", "ORVOKKI"]
+      "words": [
+        "VUOKKO",
+        "KISSANKELLO",
+        "PÄIVÄNKAKKARA",
+        "ORVOKKI"
+      ]
     },
     {
       "id": "th034",
       "connector": "ESITYSTAIDELAJEJA",
-      "words": ["OOPPERA", "OPERETTI", "MUSIKAALI", "BALETTI"]
+      "words": [
+        "OOPPERA",
+        "OPERETTI",
+        "MUSIKAALI",
+        "BALETTI"
+      ]
+    },
+    {
+      "id": "th035",
+      "connector": "SUOMALAISIA KALALAJEJA",
+      "words": [
+        "HAUKI",
+        "AHVEN",
+        "LAHNA",
+        "SIIKA"
+      ]
+    },
+    {
+      "id": "th036",
+      "connector": "VILJAKASVEJA",
+      "words": [
+        "VEHNÄ",
+        "RUIS",
+        "OHRA",
+        "KAURA"
+      ]
+    },
+    {
+      "id": "th037",
+      "connector": "EUROOPAN TUNNETTUJA PÄÄKAUPUNKEJA",
+      "words": [
+        "PARIISI",
+        "ROOMA",
+        "MADRID",
+        "BERLIINI"
+      ]
+    },
+    {
+      "id": "th038",
+      "connector": "KUULUISIA SUOMALAISIA",
+      "words": [
+        "MANNERHEIM",
+        "SNELLMAN",
+        "LÖNNROT",
+        "RUNEBERG"
+      ]
+    },
+    {
+      "id": "th039",
+      "connector": "ANTIIKIN KREIKAN JUMALIA",
+      "words": [
+        "ZEUS",
+        "APOLLON",
+        "AFRODITE",
+        "ARES"
+      ]
+    },
+    {
+      "id": "th040",
+      "connector": "TUNNETTUJA ALKUAINEITA",
+      "words": [
+        "KULTA",
+        "HOPEA",
+        "RAUTA",
+        "KUPARI"
+      ]
+    },
+    {
+      "id": "th041",
+      "connector": "KORTTIPELIN MAAT",
+      "words": [
+        "HERTTA",
+        "PATA",
+        "RISTI",
+        "RUUTU"
+      ]
+    },
+    {
+      "id": "th042",
+      "connector": "SHAKKINAPPULOITA",
+      "words": [
+        "KUNINGATAR",
+        "KUNINGAS",
+        "TORNI",
+        "LÄHETTI"
+      ]
+    },
+    {
+      "id": "th043",
+      "connector": "KAHVILAJUOMIA",
+      "words": [
+        "ESPRESSO",
+        "LATTE",
+        "CAPPUCCINO",
+        "AMERICANO"
+      ]
+    },
+    {
+      "id": "th044",
+      "connector": "LEIVONTAMAUSTEITA",
+      "words": [
+        "KANELI",
+        "KARDEMUMMA",
+        "INKIVÄÄRI",
+        "VANILJA"
+      ]
+    },
+    {
+      "id": "th045",
+      "connector": "SUOMALAISIA ERIKOISLAJEJA",
+      "words": [
+        "MÖLKKY",
+        "PESÄPALLO",
+        "SAAPASHEITTO",
+        "EUKONKANTO"
+      ]
+    },
+    {
+      "id": "th046",
+      "connector": "PUUTARHAN YRTTEJÄ",
+      "words": [
+        "PERSILJA",
+        "TILLI",
+        "RAKUUNA",
+        "ROSMARIINI"
+      ]
+    },
+    {
+      "id": "th047",
+      "connector": "SUOMALAISIA KAUPUNKEJA",
+      "words": [
+        "TAMPERE",
+        "TURKU",
+        "OULU",
+        "ESPOO"
+      ]
+    },
+    {
+      "id": "th048",
+      "connector": "EPÄTAVALLISIA VÄREJÄ",
+      "words": [
+        "TURKOOSI",
+        "LILA",
+        "BEIGE",
+        "ORANSSI"
+      ]
+    },
+    {
+      "id": "th049",
+      "connector": "TANSSILAJEJA",
+      "words": [
+        "VALSSI",
+        "TANGO",
+        "FOKSTROTTI",
+        "SAMBA"
+      ]
+    },
+    {
+      "id": "th050",
+      "connector": "JÄÄTELÖMAKUJA",
+      "words": [
+        "SUKLAA",
+        "LAKRITSI",
+        "VADELMA",
+        "BANAANI"
+      ]
+    },
+    {
+      "id": "th051",
+      "connector": "HARRY POTTER -HAHMOJA",
+      "words": [
+        "HARRY",
+        "HERMIONE",
+        "RON",
+        "DUMBLEDORE"
+      ]
+    },
+    {
+      "id": "th052",
+      "connector": "SUURIA SUOMALAISIA LINTUJA",
+      "words": [
+        "KOTKA",
+        "HAUKKA",
+        "KURKI",
+        "JOUTSEN"
+      ]
+    },
+    {
+      "id": "th053",
+      "connector": "YLEISIÄ SUOMALAISIA SUKUNIMIÄ",
+      "words": [
+        "KORHONEN",
+        "LEINONEN",
+        "VIRTANEN",
+        "HEIKKINEN"
+      ]
+    },
+    {
+      "id": "g050",
+      "connector": "-laukku",
+      "words": [
+        "KÄSI",
+        "KOULU",
+        "OLKA",
+        "MATKA"
+      ],
+      "compounds": [
+        "käsilaukku",
+        "koululaukku",
+        "olkalaukku",
+        "matkalaukku"
+      ]
+    },
+    {
+      "id": "g051",
+      "connector": "-sana",
+      "words": [
+        "AVAIN",
+        "TAIKA",
+        "SALA",
+        "TUNNUS"
+      ],
+      "compounds": [
+        "avain sana",
+        "taikasana",
+        "salasana",
+        "tunnussana"
+      ]
+    },
+    {
+      "id": "g052",
+      "connector": "-piste",
+      "words": [
+        "LÄHTÖ",
+        "MAALI",
+        "LOPPU",
+        "KESKI"
+      ],
+      "compounds": [
+        "lähtöpiste",
+        "maalipiste",
+        "loppupiste",
+        "keskipiste"
+      ]
+    },
+    {
+      "id": "g053",
+      "connector": "-varsi",
+      "words": [
+        "HARAVA",
+        "LAPIO",
+        "HARJA",
+        "LUUTA"
+      ],
+      "compounds": [
+        "haravavarsi",
+        "lapiovarsi",
+        "harjavarsi",
+        "luutavarsi"
+      ]
+    },
+    {
+      "id": "g054",
+      "connector": "-numero",
+      "words": [
+        "PUHELIN",
+        "SARJA",
+        "LIPPU",
+        "PELI"
+      ],
+      "compounds": [
+        "puhelinnumero",
+        "sarjanumero",
+        "lippunumero",
+        "pelinumero"
+      ]
+    },
+    {
+      "id": "g055",
+      "connector": "-hattu",
+      "words": [
+        "TALVI",
+        "KESÄ",
+        "SILKKI",
+        "OLKI"
+      ],
+      "compounds": [
+        "talvihattu",
+        "kesähattu",
+        "silkkihattu",
+        "olkihattu"
+      ]
+    },
+    {
+      "id": "g056",
+      "connector": "-levy",
+      "words": [
+        "KIINTO",
+        "ÄÄNI",
+        "KATTO",
+        "LATTIA"
+      ],
+      "compounds": [
+        "kiintolevy",
+        "äänilevy",
+        "kattolevy",
+        "lattialevy"
+      ]
+    },
+    {
+      "id": "g057",
+      "connector": "-paino",
+      "words": [
+        "KEVYT",
+        "RASKAS",
+        "HÖYHEN",
+        "SUPER"
+      ],
+      "compounds": [
+        "kevytpaino",
+        "raskaspaino",
+        "höyhenpaino",
+        "superpaino"
+      ]
+    },
+    {
+      "id": "g058",
+      "connector": "-reitti",
+      "words": [
+        "BUSSI",
+        "PYÖRÄ",
+        "VAELLUS",
+        "PAKO"
+      ],
+      "compounds": [
+        "bussireitti",
+        "pyöräreitti",
+        "vaellusreitti",
+        "pakoreitti"
+      ]
     }
   ]
 }
