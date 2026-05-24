@@ -25,7 +25,7 @@
       "id": "g004",
       "connector": "-taulu",
       "words": ["LIITU", "NAAMA", "TIKKA", "VALO"],
-      "compounds": ["liitutaulu", "naamataulu", "tikkatautu", "valotaulu"]
+      "compounds": ["liitutaulu", "naamataulu", "tikkataulu", "valotaulu"]
     },
     {
       "id": "g005",
@@ -56,12 +56,6 @@
       "connector": "-kello",
       "words": ["RANNE", "HERÄTYS", "SEINÄ", "PÖYTÄ"],
       "compounds": ["rannekello", "herätyskello", "seinäkello", "pöytäkello"]
-    },
-    {
-      "id": "g010",
-      "connector": "-ranta",
-      "words": ["MERI", "JÄRVI", "JOKI", "UIMA"],
-      "compounds": ["meriranta", "järviranta", "jokiranta", "uimaranta"]
     },
     {
       "id": "g011",
@@ -139,7 +133,7 @@
       "id": "g023",
       "connector": "-liike",
       "words": ["URHEILU", "AUTO", "LEVY", "KUKKA"],
-      "compounds": ["urheiluliike", "autoliike", "levyliike", "kukkakauppa"]
+      "compounds": ["urheiluliike", "autoliike", "levyliike", "kukkaliike"]
     },
     {
       "id": "g024",
@@ -218,7 +212,7 @@
       "id": "g036",
       "connector": "-lauta",
       "words": ["LEIKKUU", "SURFI", "LUMI", "SKEITTI"],
-      "compounds": ["leikkuulauta", "surfilauta", "lumilauta", "skeittilauuta"]
+      "compounds": ["leikkuulauta", "surfilauta", "lumilauta", "skeittilauta"]
     },
     {
       "id": "g037",
@@ -249,13 +243,6 @@
       "connector": "-varoitin",
       "words": ["PALO", "HÄKÄ", "KAASU", "MELU"],
       "compounds": ["palovaroitin", "häkävaroitin", "kaasuvaroitin", "meluvaroitin"]
-    },
-    {
-      "id": "g042",
-      "connector": "-purku",
-      "words": ["RAKENNUS", "AUTO", "POMMI", "JÄNNITYS"],
-      "compounds": ["rakennuspurku", "autopurku", "pommipurku", "jännityspurku"],
-      "_huom": "Voi olla liian vaikea — tarkista"
     }
   ],
 
@@ -268,7 +255,7 @@
     {
       "id": "puzzle-002",
       "title": "Koti ja urheilu",
-      "groups": ["g005", "g006", "g007", "g010"]
+      "groups": ["g005", "g006", "g007", "g038"]
     },
     {
       "id": "puzzle-003",
