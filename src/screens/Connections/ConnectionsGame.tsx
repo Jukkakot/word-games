@@ -55,6 +55,7 @@ function VictoryScreen({
     <div className={styles.container}>
       <div className={styles.victory}>
         <h1 className={styles.victoryTitle}>{victoryTitle(attempts, avgAttempts)}</h1>
+        <p className={styles.attemptsRow}>Yrityksiä: <span className={styles.attemptsNum}>{attempts}</span></p>
         <div className={styles.victoryGroups}>
           {solvedGroups.map(g => (
             <div key={g.id} className={styles.solvedBanner} style={{ background: g.color }}>
